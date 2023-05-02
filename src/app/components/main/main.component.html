@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-center mt-5 mb-2">Users Dashboard</h1>
+      <button class="btn btn-primary mt-3" (click)="openLocationModal()">Search By Location</button>
+      <nav class="navbar my-3">
+        <input type="text" class="form-control" id="search-text" aria-describedby="search-text" [(ngModel)]="searchText"
+          placeholder="Enter text to search" autofocus>
+      </nav>
+      <table class="table table-bordered">
+        <thead>
+          <tr class="text-center">
+            <th class="align-middle header-width" (click)="sort('fullName')">Full Name&nbsp;<i class="fa fa-sort"></i></th>
+            <th class="align-middle header-width" (click)="sort('phoneNumber')">Phone Number&nbsp;<i class="fa fa-sort"></i></th>
+            <th class="align-middle birthday-header-width" (click)="sort('birthday')">Birthday&nbsp;<i class="fa fa-sort"></i></th>
+            <th class="align-middle header-width">More Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center table-content"
+            *ngFor="let user of users | filter: searchText | orderBy: key: reverse | paginate: {itemsPerPage:5,currentPage:p};">
+            <td>{{user.fullName}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.birthday}}</td>
+            <td>
+                <button class="btn btn-primary btn-sm" (click)="openModal(user)">Open modal</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-center mt-5">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>

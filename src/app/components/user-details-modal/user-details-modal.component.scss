@@ -1,0 +1,30 @@
+:host {
+    .additional-details {
+        padding-left: 1rem !important;
+    }
+    @media (max-width: 600px) {
+        ::ng-deep {
+            .nav-tabs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                flex-flow: row;
+            }
+        } 
+        .additional-details {
+            font-size: 14px;
+        }
+
+        .modal-body {
+            font-size: 14px;
+        }
+    }
+}
+
+::ng-deep {
+    .modal-content {
+        height: 500px;
+        overflow: auto;
+    }
+}

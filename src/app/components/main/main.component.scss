@@ -1,0 +1,18 @@
+:host {
+    @media (max-width: 600px) {
+        .header-width {
+            width:30%;
+            font-size: 14px;
+        }
+
+        .birthday-header-width {
+            width:40%;
+            font-size: 14px;
+        }
+
+        .table-content {
+            vertical-align: middle;
+            font-size: 14px;
+        }
+    }
+}

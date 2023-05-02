@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">{{this.user?.fullName}} additional details</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                  (click)="modalRef.hide()"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <tabset class="member-tabset" #memberTabs>
+                    <tab heading='Additional details' (selectTab)="onTabActivated($event)">
+                        <div class="mt-3 additional-details">
+                            <p>Address: {{user?.address}}</p>
+                            <span>image: </span><img [src]="convertBase64ToImg(user?.img)">
+                        </div>
+                    </tab> 
+                    <tab heading='Cars list' (selectTab)="onTabActivated($event)">
+                        <div *ngIf="isLoadingCars$ | async">Loading...</div>
+                        <ul class="list-group" *ngFor="let car of userCars">
+                            <li class="list-group-item"><span><strong>Car number: </strong></span>{{car.carNumber}}</li>
+                            <li class="list-group-item"><span><strong>Car branch: </strong></span>{{car.carBranch}}</li>
+                            <li class="list-group-item"><span><strong>Car color: </strong></span>{{car.carColor}}</li>
+                        </ul>
+                    </tab> 
+                    <tab heading='Locations list' (selectTab)="onTabActivated($event)">
+                        <div *ngIf="isLoadingLocations$ | async">Loading</div>
+                        <ul class="list-group" *ngFor="let location of userLocations">
+                            <li class="list-group-item"><span><strong>Address: </strong></span>{{location.locationLatLng}}</li>
+                            <li class="list-group-item"><span><strong>Date of visitation: </strong></span>{{modifyDateTimeToDate(location.dateTime)}}</li>
+                            <li class="list-group-item"><span><strong>Car visited with: </strong></span>{{location.carNumber}}</li>
+                        </ul>
+                    </tab> 
+                 </tabset>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="modalRef.hide()">
+                  Close
+                </button>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,84 @@
+{
+    "users":[
+        {
+            "userIndex": "1",
+            "fullName": "AA aa",
+            "address": "Tel Aviv",
+            "phoneNumber": "0501234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1990"
+        },
+        {
+            "userIndex": "2",
+            "fullName": "BB bb",
+            "address": "Haifa",
+            "phoneNumber": "0511234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1991"
+        },
+        {
+            "userIndex": "3",
+            "fullName": "CC cc",
+            "address": "Jerusalem",
+            "phoneNumber": "0521234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1992"
+        },
+        {
+            "userIndex": "4",
+            "fullName": "DD dd",
+            "address": "Ashdod",
+            "phoneNumber": "0531234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1993"
+        },
+        {
+            "userIndex": "5",
+            "fullName": "EE ee",
+            "address": "Netanya",
+            "phoneNumber": "0541234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1994"
+        },
+        {
+            "userIndex": "6",
+            "fullName": "FF ff",
+            "address": "Ashqelon",
+            "phoneNumber": "0551234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1995"
+        },
+        {
+            "userIndex": "7",
+            "fullName": "GG gg",
+            "address": "Ramat Gan",
+            "phoneNumber": "0561234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1996"
+        },
+        {
+            "userIndex": "8",
+            "fullName": "HH hh",
+            "address": "Kefar Sava",
+            "phoneNumber": "0571234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1997"
+        },
+        {
+            "userIndex": "9",
+            "fullName": "II ii",
+            "address": "Ramla",
+            "phoneNumber": "0581234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1998"
+        },
+        {
+            "userIndex": "10",
+            "fullName": "JJ jj",
+            "address": "Jerusalem",
+            "phoneNumber": "0591234567",
+            "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+            "birthday": "01-02-1999"
+        }
+    ]
+}

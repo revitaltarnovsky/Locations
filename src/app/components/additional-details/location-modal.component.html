@@ -1,0 +1,24 @@
+    <div class="modal-header">
+      <h4 class="modal-title pull-left">Search By Location</h4>
+      <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="bsModalRef.hide()">
+        <span aria-hidden="true" class="visually-hidden">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <select [(ngModel)]="selectedLocation" (ngModelChange)="onSelected()" ngDefaultControl>
+        <option hidden [ngValue]="undefined" disabled selected> Select location </option>
+        <option *ngFor="let location of locations" [ngValue]="location">{{location.locationLatLng}}</option>
+      </select>
+      <ul class="list-group mt-3" *ngFor="let car of locationCars">
+        <li class="list-group-item"><span><strong>Car number: </strong></span>{{car.carNumber}}</li>
+        <li class="list-group-item"><span><strong>Car Owner: </strong></span>{{displayCarOwnerName(car.userIndex)}}</li>
+        <li class="list-group-item"><span><strong>Time visited: </strong></span>{{displayVisitTime(selectedLocation?.dateTime)}}</li>
+      </ul>
+      <div class="image-container" *ngIf="showImage">
+        <span><strong>Location image: </strong></span>
+        <img [src]="selectedLocation?.img">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="bsModalRef.hide()">Close</button>
+    </div>
