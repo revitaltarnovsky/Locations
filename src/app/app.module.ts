@@ -12,7 +12,6 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { OrderModule } from 'ngx-order-pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { UserDetailsModalComponent } from './components/user-details-modal/user-details-modal.component';
-// import { MDBBootstrapModulesPro, ModalModule } from 'ng-uikit-pro-standard';
 import { LocationModalComponent } from './components/additional-details/location-modal.component';
 import {TabsModule} from 'ngx-bootstrap/tabs'
 import { ModalModule } from 'ngx-bootstrap/modal';
@@ -35,7 +34,6 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     Ng2SearchPipeModule,
     OrderModule,
     NgxPaginationModule,
-    // MDBBootstrapModulesPro,
     ModalModule.forRoot(),
     TabsModule.forRoot(),
     

@@ -1,5 +1,4 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-// import { MDBModalRef } from 'ng-uikit-pro-standard';
 import { User } from 'src/app/_models/user';
 import { TabDirective } from 'ngx-bootstrap/tabs';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
